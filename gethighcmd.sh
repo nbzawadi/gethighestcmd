@@ -1,8 +1,8 @@
 #!/bin/bash -i
 
-history > commands.txt
+history > /tmp/commands.txt
 
-str=$(awk '{print $2}' commands.txt | sort | uniq -c | sort -rn | head -n 1 )
+str=$(awk '{print $2}' /tmp/commands.txt | sort | uniq -c | sort -rn | head -n 1 )
 echo $str
 
 
