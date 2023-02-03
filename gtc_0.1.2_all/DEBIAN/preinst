@@ -1,0 +1,15 @@
+#!/bin/bash
+# file name preinst
+# Pre-install script for gtc. This removes old versions o gtc.
+
+echo "Looking for old versions of gtc ..."
+
+if [ -f "/usr/bin/gtc" ];then
+    sudo rm -f /usr/bin/gtc
+    echo "Removed old gtc from /usr/bin ..."
+fi
+
+if [ -d "/usr/share/gtc" ];then
+    sudo rm -rf /usr/share/gtc
+    echo "Removed old gtc from /usr/share ..."
+fi

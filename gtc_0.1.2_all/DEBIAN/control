@@ -1,0 +1,7 @@
+Package: gtc
+Version: 0.1.2
+Architecture: all
+Maintainer: Nash Zawadi <nashonzawadi@gmail.com>
+Depends: 
+Homepage: https://github.com/nashzawadi/gethighcmd
+Description: Get the most used command
